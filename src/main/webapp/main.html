@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mars</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" >
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+<canvas id="canvas" width="800" height="600" style="float: left"></canvas>
+<button class="action" id="acceleration" onclick="rover.acceleration()">Acceleration</button>
+<button class="action" id="reverse" onclick="rover.reverse()">Reverse</button>
+<button class="action" id="reset" onclick="rover.reset()">Reset</button>
+
+
+<div>
+    <p id="currentSpeed"></p>
+    <p id="currentPosition"></p>
+</div>
+
+<script src="js/mars.js"></script>
+</body>
+</html>
