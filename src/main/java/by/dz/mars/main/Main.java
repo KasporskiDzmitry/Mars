@@ -5,8 +5,6 @@ import by.dz.mars.entity.Rover;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.Deque;
 
 /**
  * Created by User on 03.10.2018.

@@ -2,9 +2,6 @@ package by.dz.mars.main;
 
 import by.dz.mars.entity.Rover;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-
 /**
  * Created by User on 03.10.2018.
  */
