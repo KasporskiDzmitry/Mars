@@ -6,13 +6,12 @@ import java.io.Serializable;
  * Created by User on 03.10.2018.
  */
 public class Rover implements Serializable {
-    private int startSpeed = 1;
     private int speed;
     private int position;
 
     public Rover() {
         this.position = 0;
-        this.speed = startSpeed;
+        this.speed = 1;
     }
 
     public void setSpeed(int speed) {
@@ -37,8 +36,16 @@ public class Rover implements Serializable {
     }
 
     public void reverse() {
-        this.startSpeed = -this.startSpeed;
-        this.speed = this.startSpeed;
+        if (this.speed >= 1) {
+            this.speed = -1;
+        } else {
+            this.speed = 1;
+        }
+    }
+
+    public void reset() {
+        this.speed = 1;
+        this.position = 0;
     }
 
     @Override
