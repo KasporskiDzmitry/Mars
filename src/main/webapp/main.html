@@ -9,17 +9,17 @@
 
 </head>
 <body>
-<canvas id="canvas" width="800" height="600" style="float: left"></canvas>
-<button class="action" id="acceleration" onclick="rover.acceleration()">Acceleration</button>
-<button class="action" id="reverse" onclick="rover.reverse()">Reverse</button>
-<button class="action" id="reset" onclick="rover.reset()">Reset</button>
+<canvas id="canvas" width="800" height="600" style="float: left; margin-right: 20px"></canvas>
+<div id="dashboard">
+    <button id="acceleration">Acceleration</button>
+    <button id="reverse">Reverse</button>
+    <button id="reset">Reset</button>
+</div>
 
 
 <div id="rover_info-wrapper">
     <p id="currentSpeed"></p>
     <p id="currentPosition"></p>
-</div>
-<div id="path-wrapper">
     <p id="path"></p>
 </div>
 

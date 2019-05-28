@@ -20,8 +20,6 @@ const promiseArray = images.map(function(imgurl){
     return prom;
 });
 
-Promise.all(promiseArray).then(draw);
-
 const rover = {
     speed : 1,
     position : 0,
@@ -101,3 +99,10 @@ function draw(numberOfFirstBlock, carPosition) {
 
     rover.refreshInfo();
 };
+
+document.getElementById("acceleration").addEventListener('click', (e) => {rover.acceleration();});
+document.getElementById("reverse").addEventListener('click', (e) => {rover.reverse();});
+document.getElementById("reset").addEventListener('click', (e) => {rover.reset();});
+
+Promise.all(promiseArray).then(draw);
+
